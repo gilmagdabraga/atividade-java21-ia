@@ -1,0 +1,26 @@
+.http
+### CREATE
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Teclado Mecânico",
+  "preco": 299.90
+}
+
+### READ
+GET http://localhost:8080/produtos
+
+### UPDATE
+PUT http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Teclado RGB",
+  "preco": 349.90
+}
+
+### DELETE
+DELETE http://localhost:8080/produtos/1

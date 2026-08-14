@@ -1,0 +1,20 @@
+### Configuração do Servidor (Baseado no seu Log)
+@host = http://localhost:8080
+@contentType = application/json
+
+### 1. Cadastrar Produto
+POST {{host}}/produtos
+Content-Type: {{contentType}}
+
+{
+  "nome": "Mouse Gamer",
+  "preco": 150.00
+}
+
+### 2. Listar Todos os Produtos
+GET {{host}}/produtos
+Accept: {{contentType}}
+
+### 3. Buscar por ID
+GET {{host}}/produtos/1
+Accept: {{contentType}}
